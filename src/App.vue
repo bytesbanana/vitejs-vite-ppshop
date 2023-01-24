@@ -7,6 +7,7 @@
 <script setup>
 import { onMounted, onBeforeMount } from 'vue';
 import { useRouter } from 'vue-router';
+import liff from '@line/liff';
 
 const router = useRouter();
 
