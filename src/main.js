@@ -1,13 +1,13 @@
-import { createApp } from "vue";
-import * as VueRouter from "vue-router";
-import "./style.css";
-import App from "./App.vue";
-import UploadSlip from "./page/UploadSlip.vue";
-import UploadResult from "./page/UploadResult.vue";
+import { createApp } from 'vue';
+import * as VueRouter from 'vue-router';
+import './style.css';
+import App from './App.vue';
+import UploadSlip from './page/UploadSlip.vue';
+import UploadResult from './page/UploadResult.vue';
 
 const routes = [
-  { path: "/slip", component: UploadSlip },
-  { path: "/result", component: UploadResult },
+  { path: '/slip', component: UploadSlip },
+  { path: '/result', component: UploadResult },
 ];
 
 const router = VueRouter.createRouter({
@@ -17,4 +17,4 @@ const router = VueRouter.createRouter({
 
 const app = createApp(App);
 app.use(router);
-app.mount("#app");
+app.mount('#app');
